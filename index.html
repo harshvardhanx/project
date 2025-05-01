@@ -28,6 +28,14 @@
                 Contact Us
             </a>
 
+            <nav class="ham_nav">
+                <a href="#home">Home</a> <hr>
+                <a href="#features">Features</a> <hr>
+                <a href="#pricing">Pricing</a> <hr>
+                <a href="#blogs">Blogs</a> <hr>
+                <a href="#about">About</a>
+            </nav>
+
             <button type="button" class="hamburger_button">
                 <img src="images/Hamburger.svg" alt="hamburger_button" class="menu_icon">
             </button>
@@ -35,7 +43,7 @@
         </div>
     </header>
 
-    <main class="content_container">
+    <main class="content_container page-id-1">
         <section class="main_section">
             <div class="content_left">
                 <p class="section_label">Very proud to introduce</p>
@@ -373,5 +381,13 @@
         </div>
     </footer>
 
+    <script>
+        const hamburger = document.querySelector(".hamburger_button");
+        const navMenu = document.querySelector(".ham_nav");
+    
+        hamburger.addEventListener("click", () => {
+            navMenu.classList.toggle("show");
+        });
+    </script>
 </body>
 </html>

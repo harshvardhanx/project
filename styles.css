@@ -78,10 +78,31 @@ body{
 .contact_button:hover{
     background-color: #5254f8;
 }
-.hamburger_button{
+.ham_nav {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 1rem;
+    background-color: #f9f9f9;
+    border-radius: 0.375rem;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+}
+.ham_nav.show {
+    display: flex;
+}
+.ham_nav a {
+    color: #718096;
+    font-size: 1.125rem;
+    font-weight: 600;
+    transition: all 0.1s;
+}
+.ham_nav a:hover {
+    color: var(--link-color);
+}
+.hamburger_button {
     display: none;
     border: none;
-    border-radius: 0375rem;
+    border-radius: 0.375rem;
     font-size: 1rem;
     font-weight: 600;
     background-color: var(--background-color);
@@ -89,7 +110,7 @@ body{
     align-self: center;
 }
 @media screen and (max-width: 768px) {
-    .hamburger_button{
+    .hamburger_button {
         display: block;
     }
 }
